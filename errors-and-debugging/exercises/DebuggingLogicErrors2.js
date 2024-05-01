@@ -3,6 +3,7 @@
 // Add console.log(launchReady) after this block, then run the program.
 
 //Given the fuelLevel value, should launchReady be true or false after the check?  Is the program behaving as expected?
+//FALSE. YES.
 
 let launchReady = false;
 let fuelLevel = 17000;

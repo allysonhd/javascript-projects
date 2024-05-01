@@ -3,7 +3,8 @@
 
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
 // I WOULD HAVE SAID FALSE BC I WOULD HAVE THOUGHT LINE 23 WOULD HAVE TO === 'green' && 'true' TO BE CONSIDERED EQUAL.
-// Is the program behaving as expected?
+// BUT I KNOW THE ANSWER IS THAT THERE IS A LOGIC BUG BC 'launchReady' is being used in two different ways: one to assess fuel level and one to assess crew status.
+// Is the program behaving as expected? NO
 
 let launchReady = false;
 let fuelLevel = 17000;

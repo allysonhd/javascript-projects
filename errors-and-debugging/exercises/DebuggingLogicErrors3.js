@@ -3,11 +3,12 @@
 // Add another console.log(launchReady) after this block and run the program.
 
 // Given the values for crewStatus and computerStatus, should launchReady be true or false after the check? 
+// I WOULD HAVE SAID 'FALSE' BECAUSE I THOUGHT crewStatus && computerStatus WOULD HAVE TO EQUAL"true" AND "green" TO BE TRUE.
 // Is the program behaving as expected? 
+// YES
 
-// Why can you just change launchReady to "true" when it's assigned "false"?
-// Why does crewStatus && computerStatus NOT evaluate to "true" AND "green"?
-// Could you also code launchReady = true as launchReady = !false?
+// Could you also code launchReady = true as launchReady = !false or is there some reason to label it "true" instead?
+// Why does crewStatus && computerStatus NOT have to equal "true" AND "green"?
 
 let launchReady = false;
 // let fuelLevel = 17000;
@@ -36,4 +37,4 @@ if (crewStatus && computerStatus === 'green'){
 // } else {
 //    console.log('Launch scrubbed.');
 // }
-// IN LINE 33 - HOW DOES IT KNOW TO LOOK FOR 'launchReady' = true WHEN WE'VE ASSIGNED "launchReady" false?¢
+// IN LINE 34 - HOW DOES IT KNOW TO LOOK FOR 'launchReady' = true WHEN WE'VE ASSIGNED "launchReady" false?
