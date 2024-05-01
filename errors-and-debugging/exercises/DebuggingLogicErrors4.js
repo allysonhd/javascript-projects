@@ -2,7 +2,7 @@
 // Run the code and examine the output. 
 
 // Given the values for fuelLevel, crewStatus and computerStatus, should launchReady be true or false?
-// I WOULD HAVE SAID FALSE BC I WOULD HAVE THOUGHT IT WOULD HAVE TO === 'green' && 'true' TO BE CONSIDERED EQUAL.
+// I WOULD HAVE SAID FALSE BC I WOULD HAVE THOUGHT LINE 23 WOULD HAVE TO === 'green' && 'true' TO BE CONSIDERED EQUAL.
 // Is the program behaving as expected?
 
 let launchReady = false;

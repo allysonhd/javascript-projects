@@ -36,3 +36,4 @@ if (crewStatus && computerStatus === 'green'){
 // } else {
 //    console.log('Launch scrubbed.');
 // }
+// IN LINE 33 - HOW DOES IT KNOW TO LOOK FOR 'launchReady' = true WHEN WE'VE ASSIGNED "launchReady" false?¢
