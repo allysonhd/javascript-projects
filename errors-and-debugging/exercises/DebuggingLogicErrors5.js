@@ -3,7 +3,7 @@
 // Refactor the code to do this. Verify that your change works by updating the console.log statements.
 
 let launchReady = false;
-let fuelLevel = 17000;
+let fuelLevel = 10000;
 let crewStatus = true;
 let computerStatus = 'green';
 let crewReady = false;
@@ -27,7 +27,7 @@ if (crewStatus && computerStatus === 'green'){
 }
 console.log("crewReady = ", crewReady);
 
-if (launchReady === true && crewReady === true) {
+if (launchReady && crewReady) {
    console.log("3...2...1...Lift off!");
 } else {
    console.log("Launch scrubbed.");
