@@ -34,7 +34,7 @@ console.log(makeRectangle(5, 3));
 function makeDownwardStairs(height) {
     let downwardStairs = ""
     for (let index = 0; index < height; index++) {
-        downwardStairs += ("\n" + makeLine(index+1));
+        downwardStairs += ("\n" + makeLine(index + 1));
     }
     return downwardStairs;
 }
@@ -59,6 +59,26 @@ return spaceLine;
 } 
 console.log(makeSpaceLine(3, 5));
 
-//THIS NEEDS WORK.  I copied this solution from another student bc my code was too complicated and not returning the "3". 
-// I need to figure out if there is a simpler way to do this.
+//^^THIS NEEDS WORK.  I copied this solution from another student to study bc my code seemed too complicated and not returning the "3". 
+// I need to understand this better and try to write it.
 
+//TRIANGLE
+// 4 - 1 - 4
+// 3 - 3 - 3
+// 2 - 5 - 2
+// 1 - 7 - 1
+// 0 - 9 - 0 (10-1?)
+// reversed
+
+
+function makeIsoscelesTriangle(height) {
+    let isoscelesTriangle = ""
+    for (index = 0; index < height; index++) {
+        isoscelesTriangle += ("\n" + makeLine(index) + " ");
+    }
+    for (index = 0; index < height; index++) {
+        isoscelesTriangle += ("\n" +makeLine(index) + "#");
+    }
+    return isoscelesTriangle;
+}
+console.log(makeIsoscelesTriangle(5));
