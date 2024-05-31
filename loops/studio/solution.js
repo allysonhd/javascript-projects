@@ -16,14 +16,8 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
 
   /// Part A #2: Write a ``for`` loop inside this function
   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
-for (let index = 0; index < numMeals; index++) {
-  meal1 = [];
-  meal1.push(pantry[0][index]);
-  meal1.push(pantry[1][index]);
-  meal1.push(pantry[2][index]);
-  meal1.push(pantry[3][index]);
-  meal1.push(pantry[4][index]);
-  meals.push(meal1);
+for (index = 0; index < numMeals; i++) {
+meals.push(protein[0] + grains[0]+ veggies[0] + beverages [0] + desserts [0]); 
 }
 
   return meals;
@@ -73,11 +67,11 @@ let meals = mealAssembly(protein, grains, veggies, beverages, desserts, 2);
     /// TEST PART C HERE ///
   /// UNCOMMENT the remaining commented lines and change the password1 and password2 strings to ensure your code is doing its job ///
 
-  let password1 = 'ABCDEF';
-  let password2 = 'notyet';
-  console.log("Time to run the password generator so we can update the menu tomorrow.")
-  console.log(`The new password is: ${generatePassword(password1, password2)}`);
-}
+//   let password1 = 'ABCDEF';
+//   let password2 = 'notyet';
+//   console.log("Time to run the password generator so we can update the menu tomorrow.")
+//   console.log(`The new password is: ${generatePassword(password1, password2)}`);
+// }
 
 module.exports = {
   protein: protein,

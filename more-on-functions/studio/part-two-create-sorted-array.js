@@ -8,6 +8,10 @@ function findMinValue(arr){
   return min;
 }
 
+let nums1 = [5, 10, 2, 42];
+let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
+let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+
 //Create a function with an array of numbers as its parameter. This function will return a new array with the numbers sorted from least to greatest value.
 
 /*Within the function:
@@ -20,10 +24,55 @@ function findMinValue(arr){
 
 //Your function here...
 
+function sortNums(arr) {
+  let newArray = [];
+  while (arr.length > 0){
+    let minValue = findMinValue(arr);
+    newArray.push(minValue);
+    arr.splice(arr.indexOf(minValue),1);
+}
+// console.log(newArray);
+return newArray;
+}
+// console.log(sortNums(nums1));
+// console.log(nums1);
+// console.log(sortNums(nums2));
+// console.log(nums2);
+// console.log(sortNums(nums3));
+// console.log(nums3);
 /* BONUS MISSION: Refactor your sorting function to use recursion below:
  */
 
+let newArray = [];
+
+function sortNumsRecursion(arr) {
+  // let newArray = [];
+//   while (arr.length > 0){
+//     let minValue = findMinValue(arr);
+//     newArray.push(minValue);
+//     arr.splice(arr.indexOf(minValue),1);
+  
+// }
+if(arr.length <= 1) {
+  return newArray;
+} else {
+  let minValue = findMinValue(arr);
+  newArray.push(minValue);
+  console.log(newArray);
+  return sortNumsRecursion(arr.splice(arr.indexOf(minValue),1));
+}
+}
+
+console.log(sortNumsRecursion(nums1));
+
 //Sample arrays for testing:
-let nums1 = [5, 10, 2, 42];
-let nums2 = [-2, 0, -10, -44, 5, 3, 0, 3];
-let nums3 = [200, 5, 4, 10, 8, 5, -3.3, 4.4, 0];
+// function sortNumsRecurvise(arr) {
+//   if (arr.length === 0) {
+//     return sorted;
+//   } 
+//   let min = findMinValue(arr);
+//   sorted.push(min);
+//   arr.splice(arr.indexOf(min), 1);
+//   return sortNumsRecurvise(arr, sorted); 
+// }
+// console.log(sortNumsRecurvise(nums1));

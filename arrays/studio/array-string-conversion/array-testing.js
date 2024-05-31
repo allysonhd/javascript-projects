@@ -5,11 +5,25 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
+console.log(protoArray1.includes(','));
+console.log(protoArray2.includes(';'));
+console.log(protoArray3.includes(' '));
+console.log(protoArray4.includes(',' && ' '));
+
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
 	let check;
+	
+	check = [protoArray1.includes(',')];
+	console.log(check);
+
 	let output;
+let array1 = protoArray1.split(',');  //split the string at each comma.
+
+//console.log(arr);
+	//console.log(protoArray1.split(','));
+
 	//TODO: 2. write the code required for this step
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
@@ -37,7 +51,7 @@ function reverseSpaces() {
 
 //5)
 function commaSpace() {
-	let check;
+	let check = [];
 	let output;
 	//TODO: write the code required for this step
   
