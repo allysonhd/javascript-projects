@@ -1,10 +1,45 @@
 // Code your selectRandomEntry function here:
 
+let idNumbers = [291, 414, 503, 599, 796, 890];
+
+function selectRandomEntry(array){
+  randomSelection =[];
+  while (randomSelection.length < 3) {
+    let randomNumber = Math.floor(Math.random() * array.length); 
+    let chosenID = array[randomNumber];  
+    if (!randomSelection.includes(chosenID)) {  
+      randomSelection.push(chosenID)
+  }   
+}
+return randomSelection;
+}
+
+console.log(selectRandomEntry(idNumbers));
+
+// use Math.random to get a random number that matches the index of IdNumbers
+// pull ID based on the random number
+// if that number doesn't match a number that was already selected then push it
+// keep going until there are three in the new array
 
 // Code your buildCrewArray function here:
+//use our selectRandomEntry function to select random id numbers
+//we need the randomSelection output
+//we need to associate the random selection output with the astronaut IDs
+function buildCrewArray(arrRandomID, arrCandidate){
+  let crew = [];
+    for (let i = 0; i < arrRandomID.length; i++) {
+      for ( let j = 0; j < arrCandidate.length; j++) {
+        if ()
+
+      }
+    }
 
 
-let idNumbers = [291, 414, 503, 599, 796, 890];
+    
+  return crew;
+}
+
+console.log(buildCrewArray(idNumbers, animals));
 
 // Here are the candidates and the 'animals' array:
 let candidateA = {
